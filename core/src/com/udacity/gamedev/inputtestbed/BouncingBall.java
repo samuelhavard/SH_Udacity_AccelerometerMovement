@@ -111,8 +111,8 @@ public class BouncingBall extends InputAdapter {
 
 
         // TODO: Apply that acceleration to the ball
-
-
+        velocity.x += delta * accelerationX;
+        velocity.y += delta * accelerationY;
 
         velocity.clamp(0, MAX_SPEED);
 
